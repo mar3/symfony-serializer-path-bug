@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  web:
+    image: php:8.1
+    command: bash /app/run.sh
+    ports:
+      - '8000:8000'
+    volumes:
+      - './:/app'
